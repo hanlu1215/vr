@@ -90,7 +90,7 @@ docker run --rm -p 4090:4090 -v "$HOME/Movies:/media:ro" ghcr.io/hanlu1215/vr:la
 
 自动生成的访问密码会输出到容器日志中。在镜像名称后传入 `--disable-password` 可关闭身份验证，传入 `--password <password>` 则可设置固定密码。
 
-以 `v*` 格式命名的版本标签会触发发布流程：向 `ghcr.io/hanlu1215/vr` 推送多架构 Docker 镜像，并创建附带自动生成更新日志的 GitHub Release。
+以 `v*` 格式命名的版本标签会触发发布流程：向 `ghcr.io/hanlu1215/vr` 推送 `linux/amd64` Docker 镜像，并创建附带自动生成更新日志的 GitHub Release。
 
 ## 开发
 
