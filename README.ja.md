@@ -85,12 +85,12 @@ docker compose logs fsvr
 公開済みイメージを使い、`~/Movies` をメディアディレクトリとして起動するには、次のコマンドを実行します。
 
 ```sh
-docker run --rm -p 4090:4090 -v "$HOME/Movies:/media:ro" ghcr.io/foursmith/vr:latest
+docker run --rm -p 4090:4090 -v "$HOME/Movies:/media:ro" ghcr.io/hanlu1215/vr:latest
 ```
 
 自動生成されたアクセスパスワードは、コンテナのログに出力されます。認証を無効にするにはイメージ名の後に `--disable-password` を追加し、任意の固定パスワードを設定するには `--password <password>` を指定します。
 
-`v*` に一致するリリースタグを作成すると、`ghcr.io/foursmith/vr` にマルチアーキテクチャの Docker イメージが公開され、自動生成された変更履歴を含む GitHub Release も作成されます。
+`v*` に一致するリリースタグを作成すると、`ghcr.io/hanlu1215/vr` にマルチアーキテクチャの Docker イメージが公開され、自動生成された変更履歴を含む GitHub Release も作成されます。
 
 ## 開発
 

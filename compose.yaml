@@ -1,6 +1,6 @@
 services:
   fsvr:
-    image: ghcr.io/foursmith/vr:latest
+    image: ghcr.io/hanlu1215/vr:latest
     build:
       context: .
       dockerfile: Dockerfile

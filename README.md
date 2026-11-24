@@ -85,12 +85,12 @@ Use `docker compose up -d --build` to build the image from your current checkout
 To run the published image with `~/Movies` as the media directory:
 
 ```sh
-docker run --rm -p 4090:4090 -v "$HOME/Movies:/media:ro" ghcr.io/foursmith/vr:latest
+docker run --rm -p 4090:4090 -v "$HOME/Movies:/media:ro" ghcr.io/hanlu1215/vr:latest
 ```
 
 The generated access password appears in the container logs. To disable authentication, add `--disable-password` after the image name; to use a fixed password, add `--password <password>`.
 
-Each release tag matching `v*` publishes multi-architecture Docker images to `ghcr.io/foursmith/vr` and creates a GitHub release with an automatically generated changelog.
+Each release tag matching `v*` publishes multi-architecture Docker images to `ghcr.io/hanlu1215/vr` and creates a GitHub release with an automatically generated changelog.
 
 ## Development
 
